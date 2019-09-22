@@ -1,0 +1,190 @@
+.blockname{
+    display:block;
+    width:100%;
+    height:100px;
+    text-align:center;
+    font-size:40px;
+    padding-top:30px;
+}
+
+.blockslide{
+        display:block;
+        width:99%;
+        height:500px;
+        background:blue;
+        background-size:cover;
+        text-align:center;
+        position:relative;
+        color:white;
+}
+.slider2{
+        display:block;
+        width:90%;
+        height:500px;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+
+
+.slider2 .slide1{background-image:url(../img/l1.jpg);}
+.slider2 .slide2{background-image:url(../img/l2.jpg);}
+.slider2 .slide3{background-image:url(../img/yalta.jpg);}
+.slider2 .slide4{background-image:url(../img/hz1.jpg);}
+.slider2 .slide5{background-image:url(../img/hz2.jpg);}
+.slider2 .slide6{background-image:url(../img/hz3.jpg);}
+
+.chertatb::before{
+    content:"";
+    display:block;
+    width:0px;
+    height:2px;
+    background-color:white;
+    position:absolute;
+    left:3%;
+    top:6%;
+    transition: 0.4s;
+}
+
+.blockslide:hover .chertatb::before{
+    width:94%;
+}
+
+.chertatb::after{
+    content:"";
+    display:block;
+    width:0px;
+    height:2px;
+    background-color:white;
+    position:absolute;
+    right:3%;
+    bottom:6%;
+    transition: 0.4s;
+}
+
+.blockslide:hover .chertatb::after{
+    width:94%;
+}
+
+.chertarl::before{
+    content:"";
+    display:block;
+    width:2px;
+    height:0px;
+    background-color:white;
+    position:absolute;
+    left:6%;
+    top:2%;
+    transition: 0.4s;
+}
+
+.blockslide:hover .chertarl::before{
+    height:96%;
+}
+
+
+.chertarl::after{
+    content:"";
+    display:block;
+    width:2px;
+    height:0px;
+    background-color:white;
+    position:absolute;
+    right:6%;
+    bottom:2%;
+    transition: 0.4s;
+}
+
+.blockslide:hover .chertarl::after{
+    height:96%;
+}
+
+
+.blockslide::before{
+    content:"";
+    display:block;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,.2);
+    position:absolute;
+    z-index:0;
+    left:0;
+    top:0;
+    transition: 0.2s;
+}
+
+.blockslide:hover::before{
+    background-color:rgba(0,0,0,.6);
+}
+
+h1{
+    font-size:36px;
+    padding-top:50px;
+    z-index:1;
+    color:white;
+}
+
+
+.leftblock{
+    display:block;
+    width:240px;
+    height:155px;
+    background-color:rgba(0,255,0,.0);
+    position:absolute;
+    left:8%;
+    top:70%;
+    transition: 0.2s;
+    text-align:left;
+     animation-play-state: paused;
+}
+
+.rightblock{
+    display:block;
+    width:240px;
+    height:155px;
+    background-color:rgba(0,255,0,.0);
+    position:absolute;
+    right:8%;
+    top:70%;
+    transition: 0.2s;
+    text-align:left;
+    animation-play-state: paused;
+}
+
+.blockslide p{
+    margin-top:10px;
+    font-size:17px;
+}
+
+
+.blockslide:hover p{
+    animation-play-state: running;
+    }
+
+.p1{
+    animation-delay: 0s;
+}
+.p2{
+    animation-delay: 0.1s;
+}
+.p3{
+    animation-delay: 0.2s;
+}
+
+.slider2 .slick-prev:before, .slider2  .slick-next:before{
+    color:black;
+    font-size:30px;
+}
+
+
+.slider2 .slick-arrow{
+    font-size:60px;
+    opacity:1;
+}
+.slider2 .slick-prev{
+    z-index:1;
+}
+.slider2 .slick-next{
+    z-index:1;
+    right:-10px;
+}

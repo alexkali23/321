@@ -1,0 +1,214 @@
+
+body {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: black;
+    background-color: white;
+    overflow-x: hidden;
+}
+.menu {
+    list-style-type: none;
+    padding: 0;
+    position:static;
+
+}
+
+.header1{
+    display: block;
+    background-color: #800000;
+    text-align: center;
+    position:fixed;
+    z-index:30;
+    width:100%;
+    margin-top:0;
+    top:0;
+}
+.nav{
+
+}
+
+.menu li {
+    font-size: 22px;
+}
+
+.menu a {
+    position: relative;
+    z-index: 1;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+  display: inline-block;
+  padding: 15px 35px;
+    margin-left: 8px;
+    transition: .3s;
+
+
+}
+.menu a::before{
+    content: "";
+    display:block;
+    position: absolute;
+    z-index: -1;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    transform: skew(-30deg);
+    transition: .3s;
+}
+
+.menu li {
+    display: inline;
+    position: relative;
+}
+
+
+
+#lifirst{
+    display:block;
+    position: absolute;
+    background-color: black;
+    height: 52px;
+    width: 1000px;
+    right: calc(100% + 6px);
+    transform: skew(-30deg);
+}
+
+#lifirst:before{
+    content:"";
+    display:block;
+    position: absolute;
+    background-color: darkred;
+    height: 4px;
+    width: 1000px;
+    top:14%;
+    opacity:1;
+    right:-1px;
+}
+
+#lifirst:after{
+    content:"Ресторан";
+    color:darkred;
+    display:block;
+    position: absolute;
+    right:20px;
+    opacity:1;
+    top:19px
+}
+
+
+
+#lilast{
+    display:block;
+    position: absolute;
+    background-color: black;
+    height: 52px;
+    width: 1000px;
+    left: calc(100% + 13px);
+    top:-13px;
+    transform: skew(-30deg);
+}
+
+#lilast:before{
+    content:"";
+    display:block;
+    position: absolute;
+    background-color: darkred;
+    height: 4px;
+    width: 1000px;
+    top:70%;
+    opacity:1;
+    left:-1px;
+}
+
+#lilast:after{
+    content:"+79896811031";
+    color:darkred;
+    display:block;
+    position: absolute;
+    left:18px;
+    opacity:1;
+    top:8px
+
+}
+
+
+.effect{
+    display: block;
+    position: absolute;
+    z-index: -2;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top:0;
+}
+.effect::before{
+    content: "";
+    display:block;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 15px;
+    left:0px;
+    top:0;
+    transform: skew(-30deg);
+    transition: .3s;
+}
+
+.effect::after{
+    content: "";
+    display:block;
+    position: absolute;
+    height: 100%;
+    width: 15px;
+
+    right:0px;
+    top:0;
+    transform: skew(-30deg);
+    z-index: -1;
+    transition: .3s;
+}
+
+
+.menu a:hover .effect::before{
+    left:-14px;
+}
+.menu a:hover .effect::after{
+    right:-14px;
+}
+
+.menu a:hover::before{
+    background-color:azure;
+}
+
+
+.menu .a1:hover .effect::before,.menu .a1:hover .effect::after{
+    background-color: grey;
+}
+.menu .a1:hover{
+    color:grey;
+}
+
+.menu .a2:hover .effect::before,.menu .a2:hover .effect::after{
+    background-color: royalblue;
+}
+.menu .a2:hover{
+    color:royalblue;
+}
+
+
+.menu .a3:hover .effect::before,.menu .a3:hover .effect::after{
+    background-color: goldenrod;
+}
+.menu .a3:hover{
+    color:goldenrod;
+}
+
+
+.menu .a4:hover .effect::before,.menu .a4:hover .effect::after{
+    background-color: #759b2a;
+}
+.menu .a4:hover{
+    color:#759b2a;
+}

@@ -1,0 +1,361 @@
+.slidermain .blockslide:hover::before{
+    background-color:rgba(0,0,0,0.7);
+}
+
+.slidermain .blockslide::before{
+    background-color:rgba(0,0,0,0.7);
+}
+
+.slidermain{
+    margin-top:52px;
+    height:900px;
+    width:105%;
+    background-color:grey;
+}
+.slidermain .blockslide{
+        height:900px;
+}
+.slidermain .slick-active p{
+
+    transition-duration:2s;
+    transition-delay:2s;
+}
+
+.slidermain .leftb{
+    display:block;
+    position:absolute;
+    width:700px;
+    height:300px;
+    bottom:0;
+    left:0;
+    text-align:left;
+}
+.slidermain .leftb .decoration2{
+    display:block;
+    position:absolute;
+    width:7px;
+    height:7px;
+    background-color:darkred;
+    right:0;
+    top:-30px;
+}
+
+.slidermain .leftb .decoration2::before{
+    content:"";
+    display:block;
+    position:absolute;
+    width:0px;
+    height:7px;
+    background-color:darkred;
+    right:7px;
+    top:0px;
+}
+
+
+.slidermain .leftb .decoration2::after{
+    content:"";
+    display:block;
+    position:absolute;
+    width:7px;
+    height:0px;
+    background-color:darkred;
+    right:0px;
+    top:7px;
+}
+.slidermain .leftb::before{
+    content:"";
+    display:block;
+    position:absolute;
+    width:0px;
+    height:7px;
+    background-color:darkred;
+    left:0px;
+    top:-30px;
+}
+
+.slidermain .leftb::after{
+    content:"";
+    display:block;
+    position:absolute;
+    width:7px;
+    height:0px;
+    background-color:darkred;
+    right:0px;
+    bottom:0px;
+}
+
+.slidermain .leftb p{
+    margin-left:-20px;
+    position:relative;
+    opacity:0;
+}
+.slidermain .leftb p::before{
+    content:"";
+    display:block;
+    width: 6px;
+	height: 6px;
+	background: darkred;
+	border-radius: 50px;
+	position:absolute;
+	left:-15px;
+	top:12px;
+}
+
+.slidermain .rightb{
+    display:block;
+    position:absolute;
+    width:600px;
+    height:600px;
+    top:120px;
+    right:0;
+}
+
+.slidermain .otziv1{
+    display:block;
+    position:absolute;
+    width:500px;
+    height:250px;
+    top:0px;
+    left:0;
+    background-image:url(../f1.jpg);
+    background-size:cover;
+}
+
+.slidermain .otziv2{
+    display:block;
+    position:absolute;
+    width:500px;
+    height:250px;
+    bottom:0px;
+    left:0;
+}
+
+.slidermain .foto{
+    display:block;
+    position:absolute;
+    width:160px;
+    height:200px;
+    top:0px;
+    left:-30px;
+    background-size:cover;
+    opacity:0;
+}
+
+.slidermain .text{
+    display:block;
+    position:absolute;
+    width:270px;
+    height:190px;
+    top:0px;
+    right:-40px;
+    text-align:left;
+    padding:30px;
+    opacity:0;
+}
+
+.slidermain .name{
+    display:block;
+    position:absolute;
+    width:160px;
+    height:40px;
+    bottom:0px;
+    left:0;
+    font-size:25px;
+    opacity:0;
+
+}
+
+.slidermain .decoration{
+    display:block;
+    position:absolute;
+    width:20px;
+    height:20px;
+    color:darkred;
+    font-size:30px;
+    left:40%;
+    top:47%;
+}
+.slidermain .decoration::before{
+    content:"";
+    display:block;
+    position:absolute;
+    width:00px;
+    height:1px;
+    background-color:darkred;
+    right:23px;
+    top:7px;
+}
+
+.slidermain .decoration::after{
+    content:"";
+    display:block;
+    position:absolute;
+    width:00px;
+    height:1px;
+    background-color:darkred;
+    left:22px;
+    top:7px;
+}
+
+.slidermain .slick-prev{
+    top:46%;
+    left:0px;
+    background-color:darkred;
+    z-index:1;
+    width:40px;
+    height:100px;
+    opacity:0.4;
+    border-top-right-radius:20px;
+    border-bottom-right-radius:20px;
+}
+.slidermain .slick-arrow::before{
+    color:black;
+    opacity:0.3;
+}
+.slidermain .slick-next{
+    z-index: 1;
+    top:46%;
+    right: 90px;
+    background-color:darkred;
+    width:40px;
+    height:100px;
+    opacity:0.4;
+    border-top-left-radius:20px;
+    border-bottom-left-radius:20px;
+}
+.slidermain .slick-next:hover{
+    opacity:.8;
+}
+.slidermain .slick-prev:hover{
+    opacity:.8;
+}
+.slidermain .slick-next:hover::before{
+    opacity:.8;
+}
+.slidermain .slick-prev:hover::before{
+    opacity:.8;
+}
+
+
+.slidermain .slick-active .leftb .decoration2::before{
+    width:50px;
+    transition-duration:2s;
+    transition-delay:0.5s;
+}
+
+.slidermain .slick-active .leftb .decoration2::after{
+    height:35px;
+    transition-duration:2s;
+        transition-delay:0.5s;
+}
+
+.slidermain .slick-active .leftb::before{
+    width:40px;
+    transition-duration:2s;
+        transition-delay:0.5s;
+}
+
+.slidermain .slick-active .leftb::after{
+    transition-duration:2s;
+        transition-delay:0.5s;
+    height:40px;
+}
+
+
+.slidermain .slick-active .leftb p{
+    margin-left:40px;
+    transition-duration:2s;
+    opacity:1;
+}
+
+.slidermain .slick-active .leftb .p1{
+    transition-delay:0.3s;
+}
+.slidermain .slick-active .leftb .p2{
+    transition-delay:0.5s;
+}
+.slidermain .slick-active .leftb .p3{
+    transition-delay:0.7s;
+}
+.slidermain .slick-active .leftb .p4{
+    transition-delay:0.9s;
+}
+.slidermain .slick-active .leftb .p5{
+    transition-delay:1.1s;
+}
+
+
+.slidermain .slick-active .decoration::before{
+    width:200px;
+    transition-duration:2s;
+    transition-delay:0.5s;
+}
+
+.slidermain .slick-active .decoration::after{
+    width:200px;
+    transition-duration:2s;
+    transition-delay:0.5s;
+}
+
+.slidermain .slick-active .foto{
+    left:0px;
+    opacity:1;
+        transition-duration:2s;
+    transition-delay:0.5s;
+}
+
+.slidermain .slick-active .text{
+    right:3px;
+    right:3px;
+    opacity:1;
+    transition-duration:2s;
+    transition-delay:0.5s;
+}
+
+.slidermain .slick-active .name{
+    opacity:1;
+        transition-duration:3s;
+    transition-delay:0.7s;
+}
+
+.slidermain .slick-dots{
+    display:block;
+    width:auto;
+    right:320px;
+    bottom:70px;
+}
+
+.slidermain .slick-dots li{
+    margin:20px;
+}
+
+.slidermain .slick-dots button::before{
+    content:"";
+    background-color:rgba(139,0,0,0);
+    border-radius: 50px;
+    border: 4px solid grey;
+}
+
+.slidermain .slick-dots .slick-active button::before{
+    background-color:rgba(139,0,0,1);
+    transition-duration:0s;
+    transition-delay:0s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slidermain .slide1{background-image:url(../img/m1.jpg);}

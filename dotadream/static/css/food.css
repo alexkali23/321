@@ -1,0 +1,16 @@
+.cont{
+    display:block;
+    height:auto;
+    width:80%;
+
+    margin-left:10%;
+    text-align:center;
+}
+
+.blck{
+    display:inline-block;
+    background-color:grey;
+    height:300px;
+    width:400px;
+    margin:23px;
+}

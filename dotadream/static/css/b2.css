@@ -1,0 +1,215 @@
+.block2{
+
+    position:relative;
+    display:block;
+    width: 100%;
+    height:450px;
+    text-align:center;
+    font-size:30px;
+    font-family: 'Roboto Slab', serif;
+        background-size:cover;
+    background-repeat:no repeat;
+}
+
+.block2 .blockall2{
+    display:block;
+    width: 930px;
+    height:70%;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50px; left: 0; bottom: 0; right: 0;
+
+}
+.block2 .zag{
+            margin-top:35px;
+            font-family: 'Podkova', serif;
+            font-size:22px;
+}
+
+.blockall2 .b{
+    display:block;
+    float:left;
+    width:290px;
+    height:220px;
+
+    margin-left:20px;
+    text-align:center;
+    z-index:1;
+
+}
+.blockall2 .icon{
+    width:60px;
+    height:60px;
+    background-size:cover;
+    background-repeat:no repeat;
+    text-align:center;
+    margin-left:115px;
+    margin-top:5px;
+    position:relative;
+
+}
+
+.blockall2 .icon1{
+    background-image: url(../img/icon-cart.png);
+}
+
+.blockall2 .icon2{
+    background-image: url(../img/icon-avaria.png);
+}
+.blockall2 .icon3{
+    background-image: url(../img/icon-copilka.png);
+}
+
+.blockall2 .icon4{
+    background-image: url(../img/icon-garantia.png);
+}
+
+.blockall2 .icon5{
+    background-image: url(../img/icon-rabochii.png);
+}
+
+.blockall2 .icon6{
+    background-image: url(../img/icon-personalniipodhod.png);
+}
+
+.blockall2 .icon::before{
+
+
+    display:block;
+    content:"";
+    width:95px;
+    height:95px;
+    border-radius: 50%;
+    border: 3px solid black;
+    position:absolute;
+    top:-35%;
+    left:-35%;
+}
+
+
+.block3{
+
+    position:relative;
+    display:block;
+    width: 100%;
+    height:350px;
+    text-align:center;
+    font-size:30px;
+    padding-top:130px;
+    font-family: 'Roboto Slab', serif;
+
+        background-size:cover;
+    background-repeat:no repeat;
+    clear:both;
+}
+
+.blockcontact{
+    margin-top:60px;
+    display:block;
+    width: 50%;
+    height:250px;
+
+}
+
+.blockright{
+    top:200px;
+    right:0;
+    display:block;
+    width: 50%;
+    height:250px;
+    position:absolute;
+}
+.blockmobile{
+    left:30%;
+    display:block;
+    width: 250px;
+    height:250px;
+    position:absolute;
+    background-image: url(../img/bigmobile.png);
+    background-size:cover;
+            animation-duration:10s;
+    animation-name:animationserteficat;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+}
+
+.blockcontact p{
+position:relative;
+margin-top:30px;
+font-size:20px;
+}
+.blockcontact p::after{
+    margin-top:10px;
+    margin-left:30%;
+    content:"";
+    display:block;
+    width: 40%;
+    height:1px;
+    background-color:rgba(0,0,0,.3);
+
+}
+
+.blockcontact p::before{
+    top:-60%;
+    right:0%;
+    content:"";
+    display:block;
+    width: 1px;
+    height:100px;
+    background-color:rgba(0,0,0,1);
+    position:absolute;
+}
+
+
+@keyframes animationserteficat {
+    25%{
+        transform: rotate(5deg) translate(10px,-15px);
+    }
+    50%{
+         transform: rotate(-3deg) translate(-20px,-0px);
+    }
+
+    75%{
+         transform: rotate(8deg) translate(-15px,5px);
+    }
+
+    to {
+        transform: rotate(0deg) translate(0px,0px);
+    }
+}
+
+
+@media (max-width: 1160px){
+    .block2 .blockall2{
+        width: 620px;
+        }
+
+        .block2{
+            height:800px;
+        }
+
+}
+
+@media (max-width: 600px){
+    .block2 .blockall2{
+        width: 320px;
+        }
+
+        .block2{
+             height:1450px;
+        }
+
+
+        .block3 .blockcontact{
+                width: 100%;
+        }
+
+        .block3 .blockright{
+                display: none;
+        }
+}
+
+
+
+
